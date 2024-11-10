@@ -26,8 +26,6 @@ function UndrawRegister({
       alert(`Thank you for signing up ${user2.email}! We hope you enjoy our application.`)
     })
     .catch((error) => {
-      // const errorCode = error.code;
-      // const errorMessage = error.message;
       console.log(error);
       alert('It appears the login information you entered is already being used. Please sign in instead.')
     });

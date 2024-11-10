@@ -56,7 +56,7 @@ dialog {
     position: absolute;
     background-color: var(--light-pink);
     z-index: 10;
-    width: 70%;
+    width: 60vw;
     padding: 20px 60px;
     border-radius: 32px;
     border: 1px solid;
@@ -87,7 +87,7 @@ dialog {
 }
 
 .undrawSignUp__img {
-    width: 100%;
+    width: 80%;
 }
 
 .bottomBox {
@@ -534,6 +534,24 @@ label {
     transform: scale(1.3);
 }
 
+/*
+
+    ACCOUNT DETAILS PAGE   
+
+*/
+
+#accountPage {
+    height: 86dvh;
+}
+
+.accountRow {
+    padding: 1rem 5rem;
+}
+
+.accountDetailsBox {
+    margin: 6rem 0;
+}
+
 /* Header */
 
 header {
@@ -663,7 +681,6 @@ main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--cosmic-latte); */
 }
 
 .loading__background {

@@ -22,11 +22,11 @@ function Modal({ toggleModal }) {
           <span className="red red__default">Software Engineer</span> with a
           strong passion for developing websites with great{" "}
           <span className="red red__default">user experiences.</span>
-          <br />I currently work on extremely difficult engineering problems and
-          learn from a team consisting of some of the most
+          <br />I currently work on difficult engineering problems and
+          am a self-tatught developer looking for 
           <span className="red red__default"> talented</span> and{" "}
           <span className="red red__default">experienced</span> software
-          engineers everyday.
+          engineers to work with.
         </p>
         <div className="modal__languages">
           <figure className="modal__language">

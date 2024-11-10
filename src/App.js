@@ -15,6 +15,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer.jsx";
 import UndrawLogin from "./components/UndrawLogin.jsx";
 import UndrawRegister from "./components/UndrawRegister.jsx";
+import AccountPage from "./components/AccountPage.jsx";
 
 function App() {
   let [modalOpen, setModalOpen] = useState(false);
@@ -53,6 +54,7 @@ function App() {
            cardImageMapping={cardImageMapping}/>} />
           <Route path="/main" element={<Main toggleModal={toggleModal}
            scrollToTop={scrollToTop} cardImageMapping={cardImageMapping}/>}/>
+          <Route path="/account" element={<AccountPage />}/>
         </Routes>
         <Footer toggleModal={toggleModal} scrollToTop={scrollToTop}/>
         <UndrawLogin isDialogOpen={isDialogOpen} setIsDialogOpen={setIsDialogOpen} closeDialog={closeDialog} auth={auth}

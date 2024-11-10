@@ -76,7 +76,6 @@ import theSevenOfSwordsCover from './assets/tarotImages/minorArcana/Seven of Swo
 import theEightOfSwordsCover from './assets/tarotImages/minorArcana/Eight of Swords.jpg'
 import theNineOfSwordsCover from './assets/tarotImages/minorArcana/Nine of Swords.jpg'
 import theTenOfSwordsCover from './assets/tarotImages/minorArcana/Ten of Swords.jpg'
-// Import other images similarly
 
 const cardImageMapping = {
     'The Fool': theFoolCover,
@@ -157,8 +156,6 @@ const cardImageMapping = {
     'Eight of Swords': theEightOfSwordsCover,
     'Nine of Swords': theNineOfSwordsCover,
     'Ten of Swords': theTenOfSwordsCover
-  // Add other card images similarly
-  // e.g., 'The Fool': importImagePathForFool,
 };
 
 export default cardImageMapping;
