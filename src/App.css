@@ -552,6 +552,10 @@ label {
     margin: 6rem 0;
 }
 
+.accountInput {
+    width: 50%;
+}
+
 /* Header */
 
 header {
@@ -1162,6 +1166,10 @@ LARGE AND SMALL MOBILE DEVICES
     .card__selected--figure {
         height: 75%;
     }
+
+    .accountInput {
+        width: 80%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1452,6 +1460,10 @@ LARGE AND SMALL MOBILE DEVICES
 
     .modal__half {
       padding: 40px;
+    }
+
+    .accountInput {
+        width: 100%;
     }
 }
 

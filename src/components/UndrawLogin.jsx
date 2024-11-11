@@ -26,8 +26,7 @@ function UndrawLogin({
       alert(`Welcome back ${user1.email}!`)
     })
     .catch((error) => {
-      // const errorCode = error.code;
-      // const errorMessage = error.message;
+      alert(error)
       console.log(error);
     });
     setIsDialogOpen(false);

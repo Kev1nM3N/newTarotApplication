@@ -3,6 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
+import AccountPage from './AccountPage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Modal from "./Modal";
@@ -52,15 +53,13 @@ function Nav({
           <Link to="/main">
             <li className="link__hover-effect">Browse Cards</li>
           </Link>
-          <Link to={null}>
+          <Link to={user.email ? "/account" : null}>
             {user.email ? (<li>{user.email}</li> ) : (
               <li className='link__hover-effect' onClick={openDialog}>Login</li> )
             }
           </Link>
-          <Link to={null}>
             { !user.email ? (<button onClick={openRegisterDialog} className="registerButton">Register</button>) :
               (<button className='registerButton' onClick={signOutUser}>Sign Out</button>) }
-          </Link>
         </ul>
 
         <Link className="btn__menu--link" to={null}>

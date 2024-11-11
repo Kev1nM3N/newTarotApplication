@@ -54,7 +54,7 @@ function App() {
            cardImageMapping={cardImageMapping}/>} />
           <Route path="/main" element={<Main toggleModal={toggleModal}
            scrollToTop={scrollToTop} cardImageMapping={cardImageMapping}/>}/>
-          <Route path="/account" element={<AccountPage />}/>
+          <Route path="/account" element={<AccountPage auth={auth}  />}/>
         </Routes>
         <Footer toggleModal={toggleModal} scrollToTop={scrollToTop}/>
         <UndrawLogin isDialogOpen={isDialogOpen} setIsDialogOpen={setIsDialogOpen} closeDialog={closeDialog} auth={auth}
