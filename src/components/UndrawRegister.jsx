@@ -44,7 +44,7 @@ function UndrawRegister({
   React.useEffect(() => {
     onAuthStateChanged(auth, (loggedInUser) => {
       if (loggedInUser){
-        setUser(loggedInUser) //I guess it was never suppose to be user variable
+        setUser(loggedInUser)
       }
     })
   }, [])

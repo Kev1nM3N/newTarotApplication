@@ -10,7 +10,7 @@ function Main({ scrollToTop, cardImageMapping }) {
   const { query } = useParams();
   const [cards, setCards] = useState([]);
   const [filteredCards, setFilteredCards] = useState([]);
-  const [filter, setFilter] = useState(""); // State to store the filter value
+  const [filter, setFilter] = useState("");
   const navigate = useNavigate();
   const searchBarRef = useRef(null);
 
@@ -36,7 +36,7 @@ function Main({ scrollToTop, cardImageMapping }) {
       ...newMajorCards,
       ...allCards.filter((card) => card.type !== "major"),
     ];
-    setCards(mergedCards); //moved this here to keep the just created mergedCards
+    setCards(mergedCards);
     let minorMergedCards = mergedCards.filter(
       (element) => element.type === "minor"
     );
@@ -66,7 +66,7 @@ function Main({ scrollToTop, cardImageMapping }) {
       );
     }
 
-    setFilteredCards([...mergedCards]); // Initialize filteredCards with a new copy of all modified cards
+    setFilteredCards([...mergedCards]);
   }
 
   function handleFilterChange(event) {
@@ -89,7 +89,6 @@ function Main({ scrollToTop, cardImageMapping }) {
     }, 2000);
   }, []);
 
-  // Filter cards based on the selected filter value
   useEffect(() => {
     let filtered = cards;
     if (filter === "ALL") {

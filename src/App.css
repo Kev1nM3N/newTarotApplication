@@ -827,7 +827,6 @@ main {
 .card__selected {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 42px; */
 }
 
 .card__selected--container {
@@ -939,7 +938,6 @@ main {
 }
 
 .cardRec {
-    /* width: calc(100% / 10); */
     max-width: 200px;
     margin: 18px 24px;
 }

@@ -10,7 +10,6 @@ function AccountPage({ auth }) {
 
   const handleDeleteAccount = async (e) => {
     e.preventDefault();
-
     const user = auth.currentUser;
 
     if (!user) {
@@ -25,9 +24,7 @@ function AccountPage({ auth }) {
 
     try {
       const credential = EmailAuthProvider.credential(user.email, password);
-
       await reauthenticateWithCredential(user, credential);
-
       await user.delete();
       setSuccess("Your account has been successfully deleted. Taking you to the home page...");
       setError("");
@@ -55,6 +52,8 @@ function AccountPage({ auth }) {
             option to delete your account. To delete your account, type in your password
             and press delete. You will then be redirected to the home page.
           </p>
+          {success && <h1 style={{ color: "green" }}>{success}</h1>}
+          {error && <h1 style={{ color: "red" }}>{error}</h1>}
 
           <div className="accountDetailsBox">
             <div className="bottomBox">
@@ -76,8 +75,6 @@ function AccountPage({ auth }) {
                   Delete
                 </button>
               </form>
-              {success && <h1 style={{ color: "green" }}>{success}</h1>}
-              {error && <h1 style={{ color: "red" }}>{error}</h1>}
             </div>
           </div>
         </div>

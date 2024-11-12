@@ -8,8 +8,6 @@ function Backdrop({ toggleModal, openDialog, openRegisterDialog, user, signOutUs
     document.body.classList.remove(`menu__open`)
   }
 
-  //we need to fix a few bugs when it's closing from hamburger menu
-
   return (
     <div className="menu__backdrop">
       <FontAwesomeIcon
@@ -45,7 +43,7 @@ function Backdrop({ toggleModal, openDialog, openRegisterDialog, user, signOutUs
           </Link>
         </li>
         <li>
-          {user.email ? (<Link to={null} className="nav__link">{user.email}</Link> ) : (
+          {user.email ? (<Link to='/account' className="nav__link">{user.email}</Link> ) : (
             <Link className='nav__link' onClick={openDialog}>Login</Link> )
           }
         </li>
