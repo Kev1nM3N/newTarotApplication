@@ -635,7 +635,7 @@ header h1, header p {
 }
 
 .searchbar {
-    width: 80%;
+    width: 50%;
     height: 60px;
     font-size: 20px;
     border-radius: 99px;
@@ -661,7 +661,7 @@ header h1, header p {
 
 .searchbarButton {
     position: absolute;
-    right: 5.4rem;
+    right: 21.6rem;
     top: 5px;
     padding: 0.7rem 5.5rem;
     border-radius: 22px;
@@ -1023,62 +1023,80 @@ LARGE AND SMALL MOBILE DEVICES
 
 @media (max-width: 2103px){
     .searchbarButton {
-        right: 7.3rem;
+        right: 17.6rem;
     }
 }
 
 
 @media (max-width: 2000px){
     .searchbarButton {
-        right: 7rem;
+        right: 16.7rem;
     }
 }
 
-@media (max-width: 1768px){
+@media (max-width: 1958px) {
     .searchbarButton {
-        right: 6.2rem;
+        right: 16rem;
+    }
+}
+
+@media (max-width: 1860px) {
+    .searchbarButton {
+        right: 15rem;
+    }
+}
+ 
+@media (max-width: 1700px){
+    .searchbarButton {
+        right: 14.5rem;
+    }
+}
+
+@media (max-width: 1664px) {
+    .searchbarButton {
+        right: 14rem;
+    }
+
+    .searchbar {
+        padding: 0 10rem 0 24px;
     }
 }
 
 @media (max-width: 1557px){
     .searchbarButton {
-        right: 5.5rem;
+        right: 13rem;
+        padding: 0.7rem 3.5rem;
     }
 }
 
-@media (max-width: 1529px){
+@media (max-width: 1457px) {
     .searchbarButton {
-        right: 5.3rem;
+        right: 12rem;
     }
 }
 
-@media (max-width: 1523px){
-    .searchbarButton {
-        right: 5rem;
+@media (max-width: 1369px) {
+    .searchBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media (max-width: 1296px){
+    .searchbar {
+        width: 80%;
+        padding: 0 24px 0 24px;
+    }
+
     .searchbarButton {
-        right: 4.6rem;
+        margin-top: 1rem;
+        right: 11rem;
+        position: static;
     }
 }
 
 @media (max-width: 1285px) {
     .searchbarButton {
-        padding: 0.7rem 4.5rem;
-        right: 4.4rem;
-    }
-}
-
-@media (max-width: 1250px) {
-    .searchbar {
-        padding: 0 12rem 0 30px;
-    }
-    
-    .searchbarButton {
-        padding: 0.7rem 4.2rem;
-        right: 4.4rem;
+        right: 10.6rem;
     }
 }
 
@@ -1228,6 +1246,7 @@ LARGE AND SMALL MOBILE DEVICES
     .searchbar {
         padding: 0px 1rem 0 18px;
         height: 50px;
+        width: 70%;
     }
 
     .searchbar::placeholder {
@@ -1235,7 +1254,7 @@ LARGE AND SMALL MOBILE DEVICES
     }
 
     .searchbarButton {
-        position: static;
+        /* position: static; */
         margin-top: 10px;
         padding: 0.7rem 5.5rem;
     }
